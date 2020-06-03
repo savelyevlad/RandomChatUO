@@ -19,7 +19,6 @@ public class BotInitializer {
     public static void init() throws LoginException {
 
         String s = null;
-
         try {
             s = new List[]{Files.readAllLines(Paths.get("token.txt").toAbsolutePath())}[0].toString();
             s = s.substring(1, s.length() - 1);
